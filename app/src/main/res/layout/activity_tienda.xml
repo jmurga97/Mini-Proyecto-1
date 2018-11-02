@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tienda">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="46dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/cant1"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chk1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_chainStyle="spread_inside" />
+
+
+            <EditText
+                android:id="@+id/cant2"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/cant3"
+
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chk2"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/cant3"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/cant4"
+
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chk3"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/cant4"
+                android:layout_width="40sp"
+                android:layout_height="39dp"
+
+                android:layout_below="@+id/chk4"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chk4"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/cant5"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chk5"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/cant6"
+                android:layout_width="40sp"
+                android:layout_height="39dp"
+
+                android:layout_below="@+id/chk5"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chk6"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/cant7"
+                android:layout_width="40sp"
+                android:layout_height="39dp"
+
+                android:layout_below="@+id/chk6"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chk7"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <EditText
+                android:id="@+id/cant8"
+                android:layout_width="40sp"
+                android:layout_height="39dp"
+
+                android:layout_below="@+id/chk7"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chk8"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <EditText
+                android:id="@+id/cant9"
+                android:layout_width="40sp"
+                android:layout_height="39dp"
+
+                android:layout_below="@+id/chk8"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chk9"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/cant10"
+                android:layout_width="40sp"
+                android:layout_height="39dp"
+
+                android:layout_below="@+id/chk9"
+
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chk10"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <EditText
+                android:id="@+id/cant11"
+                android:layout_width="40sp"
+                android:layout_height="39dp"
+
+                android:layout_below="@+id/chk10"
+
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chk11"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/cant12"
+                android:layout_width="40sp"
+                android:layout_height="39dp"
+
+                android:layout_below="@+id/chk11"
+
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chk12"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <EditText
+                android:id="@+id/cant13"
+                android:layout_width="40sp"
+                android:layout_height="39dp"
+
+                android:layout_below="@+id/chk12"
+
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chk13"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/cant14"
+                android:layout_width="40sp"
+                android:layout_height="39dp"
+
+                android:layout_below="@+id/chk13"
+
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chk14"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/cant15"
+                android:layout_width="40sp"
+                android:layout_height="39dp"
+
+                android:layout_below="@+id/chk14"
+
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chk15"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <EditText
+                android:id="@+id/cant16"
+                android:layout_width="40sp"
+                android:layout_height="39dp"
+
+                android:layout_below="@+id/chk15"
+
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chk16"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/cant17"
+                android:layout_width="40sp"
+                android:layout_height="39dp"
+
+                android:layout_below="@+id/chk16"
+
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chk17"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/cant18"
+                android:layout_width="40sp"
+                android:layout_height="39dp"
+
+                android:layout_below="@+id/chk17"
+
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chk18"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/cant19"
+                android:layout_width="40sp"
+                android:layout_height="39dp"
+
+                android:layout_below="@+id/chk18"
+
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chk19"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/cant20"
+                android:layout_width="40sp"
+                android:layout_height="39dp"
+
+                android:layout_below="@+id/chk19"
+
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chk20"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <CheckBox
+                android:id="@+id/chk1"
+                android:layout_width="0dp"
+                android:layout_height="33dp"
+                android:layout_alignBottom="@+id/cant1"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="1.- Chocolate (10 Bs.S)"
+                app:layout_constraintBottom_toTopOf="@+id/chk2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="spread_inside" />
+
+
+            <CheckBox
+                android:id="@+id/chk2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/chk1"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text=" 2.- Fresa (10 Bs.S)"
+                app:layout_constraintBottom_toTopOf="@+id/chk3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chk1" />
+
+            <CheckBox
+                android:id="@+id/chk3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/chk2"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="3.- Manzana (15 Bs.S)"
+                app:layout_constraintBottom_toTopOf="@+id/chk4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chk2" />
+
+            <CheckBox
+                android:id="@+id/chk4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/chk3"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="4.- Baston de Caramelo (20 Bs.S)"
+                app:layout_constraintBottom_toTopOf="@+id/chk5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chk3" />
+
+
+            <CheckBox
+                android:id="@+id/chk5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cant4"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="5.- Bolas de Nieve (15 Bs.S)"
+                app:layout_constraintBottom_toTopOf="@+id/chk6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chk4" />
+
+
+            <CheckBox
+                android:id="@+id/chk6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cant5"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="6.- Cafe (10 Bs.S)"
+                app:layout_constraintBottom_toTopOf="@+id/chk7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chk5" />
+
+
+            <CheckBox
+                android:id="@+id/chk7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cant6"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="7.- Frambuesa (15 Bs.S)"
+                app:layout_constraintBottom_toTopOf="@+id/chk8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chk6" />
+
+
+            <CheckBox
+                android:id="@+id/chk8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cant7"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="8.- Miel (10 Bs.S)"
+                app:layout_constraintBottom_toTopOf="@+id/chk9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chk7" />
+
+
+            <CheckBox
+                android:id="@+id/chk9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cant8"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="9.- Eucalipto (15 Bs.S)"
+                app:layout_constraintBottom_toTopOf="@+id/chk10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chk8" />
+
+
+            <CheckBox
+                android:id="@+id/chk10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cant9"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="10.- Menta (15 Bs.S)"
+                app:layout_constraintBottom_toTopOf="@+id/chk11"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chk9" />
+
+
+            <CheckBox
+                android:id="@+id/chk11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cant10"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="11.- Soda (15 Bs.S)"
+                app:layout_constraintBottom_toTopOf="@+id/chk12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chk10" />
+
+            <CheckBox
+                android:id="@+id/chk12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cant11"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="12.- Cafe Crema (15 Bs.S)"
+                app:layout_constraintBottom_toTopOf="@+id/chk13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chk11" />
+
+
+            <CheckBox
+                android:id="@+id/chk13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cant12"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="13.- Dulce de Leche (15 Bs.S)"
+                app:layout_constraintBottom_toTopOf="@+id/chk14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chk12" />
+
+            <CheckBox
+                android:id="@+id/chk14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cant13"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="14.- Miel y Limon (20 Bs.S)"
+                app:layout_constraintBottom_toTopOf="@+id/chk15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chk13" />
+
+            <CheckBox
+                android:id="@+id/chk15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cant14"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="15.- Mentol (15 Bs.S)"
+                app:layout_constraintBottom_toTopOf="@+id/chk16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chk14" />
+
+
+            <CheckBox
+                android:id="@+id/chk16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cant15"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="16.- Miel y Mentol (20 Bs.S)"
+                app:layout_constraintBottom_toTopOf="@+id/chk17"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chk15" />
+
+            <CheckBox
+                android:id="@+id/chk17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cant16"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="17.- Regaliz (10 Bs.S)"
+                app:layout_constraintBottom_toTopOf="@+id/chk18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chk16" />
+
+            <CheckBox
+                android:id="@+id/chk18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cant17"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="18.- Chupeta de Frutas (25 Bs.S)"
+                app:layout_constraintBottom_toTopOf="@+id/chk19"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chk17" />
+
+            <CheckBox
+                android:id="@+id/chk19"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cant18"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="19.- Frutas (15 Bs.S)"
+                app:layout_constraintBottom_toTopOf="@+id/chk20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chk18" />
+
+            <CheckBox
+                android:id="@+id/chk20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cant19"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="50dp"
+                android:text=" 20.- Chupeta de Fresa (25 Bs.S)"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chk19" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView2"
+                app:layout_constraintEnd_toStartOf="@+id/cant1"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/chk1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/caramelo_chocolate1" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="40dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView3"
+                app:layout_constraintEnd_toStartOf="@+id/cant2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/chk2"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:srcCompat="@drawable/caramelo_fresa2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="40dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView4"
+                app:layout_constraintEnd_toStartOf="@+id/cant3"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/chk3"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:srcCompat="@drawable/caramelo_manzana3" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="40dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView5"
+                app:layout_constraintEnd_toStartOf="@+id/cant4"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/chk4"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                app:srcCompat="@drawable/baston_caramelo4" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="40dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView6"
+                app:layout_constraintEnd_toStartOf="@+id/cant5"
+                app:layout_constraintHorizontal_bias="0.983"
+                app:layout_constraintStart_toEndOf="@+id/chk5"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                app:srcCompat="@drawable/bolas_nieve5" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="40dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView7"
+                app:layout_constraintEnd_toStartOf="@+id/cant6"
+                app:layout_constraintHorizontal_bias="0.991"
+                app:layout_constraintStart_toEndOf="@+id/chk6"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5"
+                app:srcCompat="@drawable/caramelo_cafe6" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="40dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView22"
+                app:layout_constraintEnd_toStartOf="@+id/cant7"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/chk7"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                app:srcCompat="@drawable/caramelo_frambuesa7" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="40dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="38dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/cant20"
+                app:layout_constraintHorizontal_bias="0.967"
+                app:layout_constraintStart_toEndOf="@+id/chk20"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9"
+                app:srcCompat="@drawable/chupeta_fresa20" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="40dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView8"
+                app:layout_constraintEnd_toStartOf="@+id/cant19"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/chk19"
+                app:layout_constraintTop_toBottomOf="@+id/imageView10"
+                app:srcCompat="@drawable/caramelo_frutas19" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="40dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView9"
+                app:layout_constraintEnd_toStartOf="@+id/cant18"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/chk18"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11"
+                app:srcCompat="@drawable/chupetas_frutales18" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="40dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView10"
+                app:layout_constraintEnd_toStartOf="@+id/cant17"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/chk17"
+                app:layout_constraintTop_toBottomOf="@+id/imageView12"
+                app:srcCompat="@drawable/caramelo_regaliz17" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="40dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView11"
+                app:layout_constraintEnd_toStartOf="@+id/cant16"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/chk16"
+                app:layout_constraintTop_toBottomOf="@+id/imageView13"
+                app:srcCompat="@drawable/caramelo_ml_mntl16" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="40dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView12"
+                app:layout_constraintEnd_toStartOf="@+id/cant15"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/chk15"
+                app:layout_constraintTop_toBottomOf="@+id/imageView14"
+                app:srcCompat="@drawable/caramelo_mentol15" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="40dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView13"
+                app:layout_constraintEnd_toStartOf="@+id/cant14"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/chk14"
+                app:layout_constraintTop_toBottomOf="@+id/imageView17"
+                app:srcCompat="@drawable/caramelo_ml_limn14" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="40dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView14"
+                app:layout_constraintEnd_toStartOf="@+id/cant13"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/chk13"
+                app:layout_constraintTop_toBottomOf="@+id/imageView18"
+                app:srcCompat="@drawable/cafe_ydulce_13" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="40dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView17"
+                app:layout_constraintEnd_toStartOf="@+id/cant12"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/chk12"
+                app:layout_constraintTop_toBottomOf="@+id/imageView19"
+                app:srcCompat="@drawable/car_cafe_crema12" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="40dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView18"
+                app:layout_constraintEnd_toStartOf="@+id/cant11"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/chk11"
+                app:layout_constraintTop_toBottomOf="@+id/imageView20"
+                app:srcCompat="@drawable/caramelo_soda11" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="40dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView19"
+                app:layout_constraintEnd_toStartOf="@+id/cant10"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/chk10"
+                app:layout_constraintTop_toBottomOf="@+id/imageView21"
+                app:srcCompat="@drawable/caramelo_menta10" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="40dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView20"
+                app:layout_constraintEnd_toStartOf="@+id/cant9"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/chk9"
+                app:layout_constraintTop_toBottomOf="@+id/imageView22"
+                app:srcCompat="@drawable/caramelo_eucalipto9" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="40dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView21"
+                app:layout_constraintEnd_toStartOf="@+id/cant8"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/chk8"
+                app:layout_constraintTop_toBottomOf="@+id/imageView7"
+                app:srcCompat="@drawable/caramelo_miel8" />
+
+            <android.support.constraint.Barrier
+                android:id="@+id/barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="left" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/comprar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="Añadir al Carrito"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+
+
+
+</RelativeLayout>

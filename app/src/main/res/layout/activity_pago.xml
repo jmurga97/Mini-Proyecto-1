@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <Button
+        android:id="@+id/comprar"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="Comprar"
+        android:textColor="@android:color/background_dark"
+        android:drawableRight="@drawable/ic_action_check"/>
+
+    <EditText
+        android:id="@+id/cvv"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/numero"
+        android:layout_below="@+id/ci"
+        android:drawableLeft="@drawable/ic_action_lock"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Cvv:"
+        android:inputType="numberPassword" />
+
+    <EditText
+        android:id="@+id/numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/ci"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:ems="10"
+        android:hint="Num de Tarjeta:"
+        android:inputType="number" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cvv"
+        android:layout_marginStart="34dp"
+        android:text="Credito" />
+
+    <EditText
+        android:id="@+id/fecha"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cvv"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/ic_action_date"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Valid Thru:"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/ci"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="87dp"
+        android:ems="10"
+        android:hint="Cédula:"
+        android:inputType="number"
+        android:selectAllOnFocus="false"
+        android:singleLine="false" />
+
+    <EditText
+        android:id="@+id/monto"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="128dp"
+        android:drawableLeft="@drawable/ic_action_coin"
+        android:ems="10"
+        android:hint="Monto:"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/montoTotal"
+        android:layout_width="150sp"
+        android:layout_height="30sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="91dp"
+        android:layout_marginLeft="91dp"
+        android:layout_marginBottom="93dp"
+        android:text="" />
+
+
+</RelativeLayout>

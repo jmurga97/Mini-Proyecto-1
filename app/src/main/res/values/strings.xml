@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CandyWorld</string>
+    <string name="title_activity_pago">Pago</string>
+    <string name="title_activity_exito">Exito</string>
+</resources>
