@@ -301,6 +301,8 @@ int cont = 0;
         });
     }
 
+    /** Funcion para verificar, si fue pulsado un check */
+
 
     public void verificar(){
 
@@ -368,6 +370,10 @@ int cont = 0;
 
 
     }
+
+
+    /** Funcion para llenar el la lista de arreglos */
+
     public void llenar(){
         ArrayList<String> productos = new ArrayList<>();
 
