@@ -471,7 +471,7 @@ int cont = 0;
             public void onClick(View view) {
                 verificar();
                 if (cont <=10){
-                    Toast.makeText(getApplicationContext(),"Excelente",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Tasty",Toast.LENGTH_SHORT).show();
                     llenar();
                 } else { Toast.makeText(getApplicationContext(),"Maximo 10 Articulos",Toast.LENGTH_SHORT).show(); cont=0; }
             }

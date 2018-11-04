@@ -35,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
         final ArrayList<String> productos = getIntent().getStringArrayListExtra("productos");
         final int total = getIntent().getIntExtra("total",0);
 
+        /**
+         *Se crea la rutina para recibir la lista de arreglos, donde se verifica que si la misma no es vacia la misma sea
+         * visulizada, se active el boton para comprar y se activen los macanismos para borrar los articulos si se desease.
+         * */
+
         if (productos != null) {
             final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1, productos);
             listView.setAdapter(adapter);
@@ -42,11 +47,11 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+                        
             listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
                 @Override
                 public boolean onItemLongClick(AdapterView<?> adapterView, View view, final int i, long l) {
-                    Toast.makeText(getApplicationContext(), "lol", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Articulo Borrado", Toast.LENGTH_SHORT).show();
 
                     AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
                     mBuilder.setMessage("Quieres borrar de la lista?");
@@ -57,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                             if (adapter.getCount() == 0 ){comprar.setEnabled(false);}
                         }
                     });
-                    mBuilder.setNegativeButton("Nop", null);
+                    mBuilder.setNegativeButton("No", null);
                     Dialog dialog = mBuilder.create();
                     dialog.show();
                     return false;
@@ -65,7 +70,11 @@ public class MainActivity extends AppCompatActivity {
             });
         }
 
-
+        /**
+         *Se crea el boton para ir a la activity de la tienda.
+         * Ademas cuando se le de al boton de comprar se envia el total, para realizar el pago en la intefaz
+         * respectiva.
+         * */
 
         tienda.setOnClickListener(new View.OnClickListener() {
 

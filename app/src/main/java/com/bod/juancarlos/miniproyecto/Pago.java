@@ -29,6 +29,11 @@ public class Pago extends AppCompatActivity {
         comprar = findViewById(R.id.comprar);
         montoTotal = findViewById(R.id.monto);
 
+        /**
+         * Se recibe el la suma del valor total de elementos seleccionados para realizar el pago del mismo en esta intefaz.
+         * */
+
+
        final int total = getIntent().getIntExtra("total",0);
         montoTotal.setText(total+" Bs. S");
         montoTotal.setEnabled(false);

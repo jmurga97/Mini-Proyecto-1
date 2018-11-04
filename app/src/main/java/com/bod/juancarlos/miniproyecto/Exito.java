@@ -15,6 +15,10 @@ public class Exito extends AppCompatActivity {
         setContentView(R.layout.activity_exito);
         volver = findViewById(R.id.back);
 
+        /**
+         * Se anade un boton para regresar al menu principal
+         * */
+
         volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

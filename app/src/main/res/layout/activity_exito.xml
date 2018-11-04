@@ -17,7 +17,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="167dp"
-        android:text="Operación"
+        android:text="Exitosa!"
         android:textSize="30sp" />
 
     <TextView
@@ -27,7 +27,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="224dp"
-        android:text="Exitosa!"
+        android:text="Operacion"
         android:textSize="30sp" />
 
     <Button
