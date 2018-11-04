@@ -7,8 +7,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".Exito"
-    >
+    android:background="@color/pastel"
+    tools:context=".Exito">
 
     <TextView
         android:id="@+id/textView3"
@@ -38,7 +38,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="48dp"
-        android:background="@android:color/holo_blue_light"
+        android:background="@drawable/estilobutton"
 
         android:text="Volver"
         android:textAppearance="@style/TextAppearance.AppCompat"
