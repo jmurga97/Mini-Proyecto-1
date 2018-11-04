@@ -546,6 +546,8 @@ int cont = 0;
 
 
     }
+    /**En la funcion de llenar utilizamos una lista de arreglos, las cuales estan basadas en rutinas que verifican cual */
+    /**producto se eligio, calcula el subtotal de cada prodcuto y se anaden a un arreglo */
     public void llenar(){
         ArrayList<String> productos = new ArrayList<>();
 
@@ -690,6 +692,7 @@ int cont = 0;
 
         }
 
+        /** Utilizamos un intent para enviar tanto la lista de productos agregados a carrito como el precio total a pagar  */
 
         Intent i = new Intent(tienda.this,MainActivity.class);
 
@@ -699,6 +702,8 @@ int cont = 0;
         startActivity(i);
 
     }
+
+    /**Creamos limpiamos los focos */
     public void limpiarFocus(){
         cant1.clearFocus();
         cant2.clearFocus();
