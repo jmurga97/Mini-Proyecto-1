@@ -33,12 +33,13 @@ public class MainActivity extends AppCompatActivity {
         comprar = findViewById(R.id.button5);
 
         final ArrayList<String> productos = getIntent().getStringArrayListExtra("productos");
-
+        final int total = getIntent().getIntExtra("total",0);
 
         if (productos != null) {
             final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1, productos);
             listView.setAdapter(adapter);
             comprar.setEnabled(true);
+
 
 
 
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                         public void onClick(DialogInterface dialogo, int id) {
                             productos.remove(i);
                             adapter.notifyDataSetChanged();
+                            if (adapter.getCount() == 0 ){comprar.setEnabled(false);}
                         }
                     });
                     mBuilder.setNegativeButton("Nop", null);
@@ -62,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
+
+
 
         tienda.setOnClickListener(new View.OnClickListener() {
 
@@ -79,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
                 public void onClick(View view) {
                     Intent intent = new Intent(MainActivity.this, Pago.class);
+                    intent.putExtra("total", total);
                     startActivity(intent);
                 }
             });

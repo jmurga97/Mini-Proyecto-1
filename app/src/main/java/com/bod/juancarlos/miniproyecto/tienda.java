@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -14,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class tienda extends AppCompatActivity implements View.OnClickListener {
+public class tienda extends AppCompatActivity{
 EditText cant1,cant2,cant3,cant4,cant5,cant6,cant7,cant8,cant9,cant10,cant11,cant12,cant13,cant14,cant15,cant16,cant17,cant18,cant19,cant20;
 CheckBox chk1,chk2,chk3,chk4,chk5,chk6,chk7,chk8,chk9,chk10,chk11,chk12,chk13,chk14,chk15,chk16,chk17,chk18,chk19,chk20;
 Button comprar;
@@ -73,221 +74,397 @@ int cont = 0;
         comprar = findViewById(R.id.comprar);
 
 
-        chk1.setOnClickListener(this);
-        chk2.setOnClickListener(this);
-        chk3.setOnClickListener(this);
-        chk4.setOnClickListener(this);
-        chk5.setOnClickListener(this);
-        chk6.setOnClickListener(this);
-        chk7.setOnClickListener(this);
-        chk8.setOnClickListener(this);
-        chk9.setOnClickListener(this);
-        chk10.setOnClickListener(this);
-        chk11.setOnClickListener(this);
-        chk12.setOnClickListener(this);
-        chk13.setOnClickListener(this);
-        chk14.setOnClickListener(this);
-        chk15.setOnClickListener(this);
-        chk16.setOnClickListener(this);
-        chk17.setOnClickListener(this);
-        chk18.setOnClickListener(this);
-        chk19.setOnClickListener(this);
-        chk20.setOnClickListener(this);
+        chk1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (chk1.isChecked()){
+                    cant1.setEnabled(true);
+                    cant1.requestFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
+                    imm.showSoftInput(cant1, InputMethodManager.SHOW_IMPLICIT);
 
-        }
+                } else {
+                    cant1.setText("");
+                    cant1.setHint("0");
+                    cant1.setEnabled(false);
+                    limpiarFocus();
+                    onResume();
+                }
+            }
+        });
 
+        chk2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (chk2.isChecked()){
+                    cant2.setEnabled(true);
+                    cant2.requestFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
+                    imm.showSoftInput(cant2, InputMethodManager.SHOW_IMPLICIT);
 
-    @Override
-    public void onClick(View view) {
-        if (chk1.isChecked()==true){
-            cant1.setEnabled(true);
+                } else {
+                    cant2.setText("");
+                    cant2.setHint("0");
+                    cant2.setEnabled(false);
+                    limpiarFocus();
+                    onResume();
 
-           } else {
-            cant1.setText("");
-            cant1.setHint("0");
-            cant1.setEnabled(false);
+                }
+            }
+        });
 
-        }
-        if (chk2.isChecked()==true){
-            cant2.setEnabled(true);
+        chk3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (chk3.isChecked()){
+                    cant3.setEnabled(true);
+                    cant3.requestFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
+                    imm.showSoftInput(cant3, InputMethodManager.SHOW_IMPLICIT);
 
-           } else {
-            cant2.setText("");
-            cant2.setHint("0");
-            cant2.setEnabled(false);
+                } else {
+                    cant3.setText("");
+                    cant3.setHint("0");
+                    cant3.setEnabled(false);
+                    limpiarFocus();
+                    onResume();
 
-        }
-        if (chk3.isChecked()==true){
-            cant3.setEnabled(true);
+                }
+            }
+        });
 
-             } else {
-            cant3.setText("");
-            cant3.setHint("0");
-            cant3.setEnabled(false);
+        chk4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (chk4.isChecked()){
+                    cant4.setEnabled(true);
+                    cant4.requestFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
+                    imm.showSoftInput(cant4, InputMethodManager.SHOW_IMPLICIT);
 
-        }
-        if (chk4.isChecked()==true){
-            cant4.setEnabled(true);
+                } else {
+                    cant4.setText("");
+                    cant4.setHint("0");
+                    cant4.setEnabled(false);
+                    limpiarFocus();
+                    onResume();
 
-            } else {
-            cant4.setText("");
-            cant4.setHint("0");
-            cant4.setEnabled(false);
+                }
+            }
+        });
 
-        }
-        if (chk5.isChecked()==true){
-            cant5.setEnabled(true);
+        chk5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (chk5.isChecked()){
+                    cant5.setEnabled(true);
+                    cant5.requestFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
+                    imm.showSoftInput(cant5, InputMethodManager.SHOW_IMPLICIT);
 
-            } else {
-            cant5.setText("");
-            cant5.setHint("0");
-            cant5.setEnabled(false);
+                } else {
+                    cant5.setText("");
+                    cant5.setHint("0");
+                    cant5.setEnabled(false);
+                    limpiarFocus();
+                    onResume();
 
-        }
+                }
+            }
+        });
 
-        if (chk6.isChecked()==true){
-                cant6.setEnabled(true);
+        chk6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (chk6.isChecked()){
+                    cant6.setEnabled(true);
+                    cant6.requestFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
+                    imm.showSoftInput(cant6, InputMethodManager.SHOW_IMPLICIT);
 
-            } else {
-            cant6.setText("");
-            cant6.setHint("0");
-            cant6.setEnabled(false);
-        }
+                } else {
+                    cant6.setText("");
+                    cant6.setHint("0");
+                    cant6.setEnabled(false);
+                    limpiarFocus();
+                    onResume();
 
-        if (chk7.isChecked()==true){
-                cant7.setEnabled(true);
+                }
+            }
+        });
 
-            } else {
-            cant7.setText("");
-            cant7.setHint("0");
-            cant7.setEnabled(false);
-        }
+        chk7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (chk7.isChecked()){
+                    cant7.setEnabled(true);
+                    cant7.requestFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
+                    imm.showSoftInput(cant7, InputMethodManager.SHOW_IMPLICIT);
 
-        if (chk8.isChecked()==true){
-                cant8.setEnabled(true);
+                } else {
+                    cant7.setText("");
+                    cant7.setHint("0");
+                    cant7.setEnabled(false);
+                    limpiarFocus();
+                    onResume();
+                }
+            }
+        });
 
-            } else {
-            cant8.setText("");
-            cant8.setHint("0");
-            cant8.setEnabled(false);
-        }
+        chk8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (chk8.isChecked()){
+                    cant8.setEnabled(true);
+                    cant8.requestFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
+                    imm.showSoftInput(cant8, InputMethodManager.SHOW_IMPLICIT);
 
-        if (chk9.isChecked()==true){
-                cant9.setEnabled(true);
+                } else {
+                    cant8.setText("");
+                    cant8.setHint("0");
+                    cant8.setEnabled(false);
+                    limpiarFocus();
+                    onResume();
 
-            } else {
-            cant9.setText("");
-            cant9.setHint("0");
-            cant9.setEnabled(false);
-        }
+                }
+            }
+        });
 
-        if (chk10.isChecked() == true) {
-                cant10.setEnabled(true);
+        chk9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (chk9.isChecked()){
+                    cant9.setEnabled(true);
+                    cant9.requestFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
+                    imm.showSoftInput(cant9, InputMethodManager.SHOW_IMPLICIT);
 
-            } else {
-                cant10.setText("");
-                cant10.setHint("0");
-                cant10.setEnabled(false);
+                } else {
+                    cant9.setText("");
+                    cant9.setHint("0");
+                    cant9.setEnabled(false);
+                    limpiarFocus();
+                    onResume();
+                }
+            }
+        });
 
+        chk10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (chk10.isChecked()){
+                    cant10.setEnabled(true);
+                    cant10.requestFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
+                    imm.showSoftInput(cant10, InputMethodManager.SHOW_IMPLICIT);
 
-        }
+                } else {
+                    cant10.setText("");
+                    cant10.setHint("0");
+                    cant10.setEnabled(false);
+                    limpiarFocus();
+                    onResume();
+                }
+            }
+        });
 
+        chk11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (chk11.isChecked()){
+                    cant11.setEnabled(true);
+                    cant11.requestFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
+                    imm.showSoftInput(cant11, InputMethodManager.SHOW_IMPLICIT);
 
-        if (chk11.isChecked()==true){
-            cant11.setEnabled(true);
+                } else {
+                    cant11.setText("");
+                    cant11.setHint("0");
+                    cant11.setEnabled(false);
+                    limpiarFocus();
+                    onResume();
+                }
+            }
+        });
 
-        } else {
-            cant11.setText("");
-            cant11.setHint("0");
-            cant11.setEnabled(false);
+        chk12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (chk12.isChecked()){
+                    cant12.setEnabled(true);
+                    cant12.requestFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
+                    imm.showSoftInput(cant12, InputMethodManager.SHOW_IMPLICIT);
 
-        }
+                } else {
+                    cant12.setText("");
+                    cant12.setHint("0");
+                    cant12.setEnabled(false);
+                    limpiarFocus();
+                    onResume();
 
-        if (chk12.isChecked()==true){
-            cant12.setEnabled(true);
+                }
+            }
+        });
 
-        } else {
-            cant12.setText("");
-            cant12.setHint("0");
-            cant12.setEnabled(false);
+        chk13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (chk13.isChecked()){
+                    cant13.setEnabled(true);
+                    cant13.requestFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
+                    imm.showSoftInput(cant13, InputMethodManager.SHOW_IMPLICIT);
 
-        }
-        if (chk13.isChecked()==true){
-            cant13.setEnabled(true);
+                } else {
+                    cant13.setText("");
+                    cant13.setHint("0");
+                    cant13.setEnabled(false);
+                    limpiarFocus();
+                    onResume();
 
-        } else {
-            cant13.setText("");
-            cant13.setHint("0");
-            cant13.setEnabled(false);
+                }
+            }
+        });
 
-        }
-        if (chk14.isChecked()==true){
-            cant14.setEnabled(true);
+        chk14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (chk14.isChecked()){
+                    cant14.setEnabled(true);
+                    cant14.requestFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
+                    imm.showSoftInput(cant4, InputMethodManager.SHOW_IMPLICIT);
 
-        } else {
-            cant14.setText("");
-            cant14.setHint("0");
-            cant14.setEnabled(false);
+                } else {
+                    cant14.setText("");
+                    cant14.setHint("0");
+                    cant14.setEnabled(false);
+                    limpiarFocus();
+                    onResume();
 
-        }
-        if (chk15.isChecked()==true){
-            cant15.setEnabled(true);
+                }
+            }
+        });
 
-        } else {
-            cant15.setText("");
-            cant15.setHint("0");
-            cant15.setEnabled(false);
+        chk15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (chk15.isChecked()){
+                    cant15.setEnabled(true);
+                    cant15.requestFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
+                    imm.showSoftInput(cant15, InputMethodManager.SHOW_IMPLICIT);
 
-        }
-        if (chk16.isChecked()==true){
-            cant16.setEnabled(true);
+                } else {
+                    cant15.setText("");
+                    cant15.setHint("0");
+                    cant15.setEnabled(false);
+                    limpiarFocus();
+                    onResume();
 
-        } else {
-            cant16.setText("");
-            cant16.setHint("0");
-            cant16.setEnabled(false);
+                }
+            }
+        });
 
-        }
-        if (chk17.isChecked()==true){
-            cant17.setEnabled(true);
+        chk16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (chk16.isChecked()){
+                    cant16.setEnabled(true);
+                    cant16.requestFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
+                    imm.showSoftInput(cant16, InputMethodManager.SHOW_IMPLICIT);
 
-        } else {
-            cant17.setText("");
-            cant17.setHint("0");
-            cant17.setEnabled(false);
+                } else {
+                    cant16.setText("");
+                    cant16.setHint("0");
+                    cant16.setEnabled(false);
+                    limpiarFocus();
+                    onResume();
 
-        }
-        if (chk18.isChecked()==true){
-            cant18.setEnabled(true);
+                }
+            }
+        });
 
-        } else {
-            cant18.setText("");
-            cant18.setHint("0");
-            cant18.setEnabled(false);
+        chk17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (chk17.isChecked()){
+                    cant17.setEnabled(true);
+                    cant17.requestFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
+                    imm.showSoftInput(cant17, InputMethodManager.SHOW_IMPLICIT);
 
-        }
-        if (chk19.isChecked()==true){
-            cant19.setEnabled(true);
+                } else {
+                    cant17.setText("");
+                    cant17.setHint("0");
+                    cant17.setEnabled(false);
+                    limpiarFocus();
+                    onResume();
+                }
+            }
+        });
 
-        } else {
-            cant19.setText("");
-            cant19.setHint("0");
-            cant19.setEnabled(false);
+        chk18.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (chk18.isChecked()){
+                    cant18.setEnabled(true);
+                    cant18.requestFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
+                    imm.showSoftInput(cant18, InputMethodManager.SHOW_IMPLICIT);
 
-        }
-        if (chk20.isChecked()==true){
-            cant20.setEnabled(true);
+                } else {
+                    cant18.setText("");
+                    cant18.setHint("0");
+                    cant18.setEnabled(false);
+                    limpiarFocus();
+                    onResume();
 
-        } else {
-            cant20.setText("");
-            cant20.setHint("0");
-            cant20.setEnabled(false);
+                }
+            }
+        });
 
-        }
+        chk19.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (chk19.isChecked()){
+                    cant19.setEnabled(true);
+                    cant19.requestFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
+                    imm.showSoftInput(cant19, InputMethodManager.SHOW_IMPLICIT);
 
+                } else {
+                    cant19.setText("");
+                    cant19.setHint("0");
+                    cant19.setEnabled(false);
+                    limpiarFocus();
+                    onResume();
+                }
+            }
+        });
 
+        chk20.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (chk20.isChecked()){
+                    cant20.setEnabled(true);
+                    cant20.requestFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
+                    imm.showSoftInput(cant20, InputMethodManager.SHOW_IMPLICIT);
 
-
+                } else {
+                    cant20.setText("");
+                    cant20.setHint("0");
+                    cant20.setEnabled(false);
+                    limpiarFocus();
+                    onResume();
+                }
+            }
+        });
 
         comprar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -299,9 +476,8 @@ int cont = 0;
                 } else { Toast.makeText(getApplicationContext(),"Maximo 10 Articulos",Toast.LENGTH_SHORT).show(); cont=0; }
             }
         });
-    }
 
-    /** Funcion para verificar, si fue pulsado un check */
+        }
 
 
     public void verificar(){
@@ -323,7 +499,7 @@ int cont = 0;
         }
         if(chk6.isChecked()==true) {
             cont++;
-                }
+        }
         if(chk7.isChecked()==true) {
             cont++;
         }
@@ -370,10 +546,6 @@ int cont = 0;
 
 
     }
-
-
-    /** Funcion para llenar el la lista de arreglos */
-
     public void llenar(){
         ArrayList<String> productos = new ArrayList<>();
 
@@ -409,7 +581,7 @@ int cont = 0;
             num= Integer.parseInt(cant5.getText().toString());
             num5 = 15*num;
             total = total + num5;
-            productos.add("Bolas de Nieve                Cantidad:" +cant5.getText().toString() + "      Precio Subtotal: " + num5 + " Bs.S");
+            productos.add("Bolas de Nieve                       Cantidad:" +cant5.getText().toString() + "      Precio Subtotal: " + num5 + " Bs.S");
 
         }
         if(cant6.isEnabled()==true && !cant6.getText().toString().equals("0") && !cant6.getText().toString().equals("")) {
@@ -519,19 +691,24 @@ int cont = 0;
         }
 
 
-
-
         Intent i = new Intent(tienda.this,MainActivity.class);
-        i.putExtra("productos",productos);
 
+
+        i.putExtra("productos",productos);
+        i.putExtra("total",total);
         startActivity(i);
 
-        /*
-        Intent miintent = new Intent(tienda.this,Pago.class);
-        miintent.putExtra("total",total);
-
-        startActivity(miintent);
-        */
-
+    }
+    public void limpiarFocus(){
+        cant1.clearFocus();
+        cant2.clearFocus();
+        cant3.clearFocus();
+        cant4.clearFocus();
+        cant5.clearFocus();
+        cant6.clearFocus();
+        cant7.clearFocus();
+        cant8.clearFocus();
+        cant9.clearFocus();
+        cant10.clearFocus();
     }
 }

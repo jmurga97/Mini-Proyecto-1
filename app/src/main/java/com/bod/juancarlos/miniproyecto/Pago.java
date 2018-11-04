@@ -15,7 +15,7 @@ public class Pago extends AppCompatActivity {
     private EditText fecha;
     private CheckBox credito;
     private Button comprar;
-    TextView montoTotal;
+     EditText montoTotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,12 @@ public class Pago extends AppCompatActivity {
         credito = findViewById(R.id.checkBox);
 
         comprar = findViewById(R.id.comprar);
-        montoTotal = findViewById(R.id.montoTotal);
+        montoTotal = findViewById(R.id.monto);
+
+       final int total = getIntent().getIntExtra("total",0);
+        montoTotal.setText(total+" Bs. S");
+        montoTotal.setEnabled(false);
+
 
 
         credito.setOnClickListener(new View.OnClickListener() {
@@ -52,13 +57,6 @@ public class Pago extends AppCompatActivity {
               startActivity(comprar);
             }
         });
-
-        /*
-        Bundle bundle = getIntent().getExtras();
-        int dato = bundle.getInt("total");
-
-        montoTotal.setText(dato);
-        */
 
 
 
