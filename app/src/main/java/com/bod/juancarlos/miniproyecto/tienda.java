@@ -73,6 +73,14 @@ int cont = 0;
 
         comprar = findViewById(R.id.comprar);
 
+        /**
+         *Se creo por cada checkbox un mecanismo con una funcion llamada isChecked para chequear que el mismo estaba seleccionado
+         * y se hiciera algo posteriormente(como lo era comprobar que habia 10 o menos articulos), se cambio el foco del
+         * checkbox al editText donde se coloca la cantidad de productos deseados por el usuario.
+         *
+         * A su vez se verifica cuando los mismos hallan sido marcados y luego desmarcados o de plano no hallan sido
+         * seleccionados, y se añiadio una funcion que despliegue el teclado cuando se presione los checkboxes.
+         * */
 
         chk1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -466,6 +474,11 @@ int cont = 0;
             }
         });
 
+        /**
+         *Cuando se añadan los productos al carrito (y vayan al MainActivity) se mostrara un mensaje "Tasty", y en caso
+         * de haber escogido mas de 10 productos mostrara "Maximo 10 Articulos".
+         * */
+
         comprar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -479,6 +492,10 @@ int cont = 0;
 
         }
 
+    /**
+     *Se realiza un funcion para chequear que hay 10 o menos articulos en el carrito, para ello se pone una variable
+     * y se hace que aumente si el checkbox a sido presionado
+     * */
 
     public void verificar(){
 
@@ -546,6 +563,12 @@ int cont = 0;
 
 
     }
+
+    /**
+     *Se define una funcion para llenar la lista de arreglos, en la cual se verifica si el checkbox fue precionado y de ser
+     * verdadero se procede a hacer el calculo del subtotal de productos a comprar y a llenar la lista de arreglos.
+     * */
+
     public void llenar(){
         ArrayList<String> productos = new ArrayList<>();
 
@@ -690,6 +713,10 @@ int cont = 0;
 
         }
 
+        /**
+         *Se envian a otras activities la lista de arreglo (productos) y el valor total de lo productos (total)
+         * por medio de un intent.
+         * */
 
         Intent i = new Intent(tienda.this,MainActivity.class);
 
@@ -699,6 +726,11 @@ int cont = 0;
         startActivity(i);
 
     }
+
+    /**
+     *Se limpian los focos para el funcionamiento optimo de la intefaz de tienda
+     * */
+
     public void limpiarFocus(){
         cant1.clearFocus();
         cant2.clearFocus();

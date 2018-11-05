@@ -46,12 +46,15 @@ public class MainActivity extends AppCompatActivity {
             comprar.setEnabled(true);
 
 
+            /**
+             *Se anade un mecanismo para borrar un articulo que no se desee, para ello se hace un clic largo(donde aparecera
+             * un pequeno mensaje toast con ¿Borrar Articulo?, y se preguntara si se desea o no borrar el articulo)
+             * */
 
-                        
             listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
                 @Override
                 public boolean onItemLongClick(AdapterView<?> adapterView, View view, final int i, long l) {
-                    Toast.makeText(getApplicationContext(), "Articulo Borrado", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "¿Borrar Articulo?", Toast.LENGTH_SHORT).show();
 
                     AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
                     mBuilder.setMessage("Quieres borrar de la lista?");
